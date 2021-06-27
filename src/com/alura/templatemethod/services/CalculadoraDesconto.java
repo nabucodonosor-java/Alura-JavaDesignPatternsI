@@ -1,4 +1,4 @@
-package com.alura.chainresponsibility.services;
+package com.alura.templatemethod.services;
 
 import java.math.BigDecimal;
 
@@ -12,10 +12,10 @@ public class CalculadoraDesconto {
 	
 	public BigDecimal calcular(Orcamento orcamento) {
 		
-		Desconto desconto = new DescontoCincoItens(new DescontoValorQuinhentos(
+		Desconto cadeiaDedesconto = new DescontoCincoItens(new DescontoValorQuinhentos(
 				new SemDesconto()));
 		
-		return desconto.calcular(orcamento);
+		return cadeiaDedesconto.calcular(orcamento);
 	}
 
 }
