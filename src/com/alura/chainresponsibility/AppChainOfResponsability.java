@@ -9,7 +9,7 @@ public class AppChainOfResponsability {
 
 	public static void main(String[] args) {
 		
-		Orcamento orcamento = new Orcamento(new BigDecimal("50"), 1);
+		Orcamento orcamento = new Orcamento(new BigDecimal("501"), 1);
 		CalculadoraDesconto desconto = new CalculadoraDesconto();
 		System.out.println(desconto.calcular(orcamento));
 		

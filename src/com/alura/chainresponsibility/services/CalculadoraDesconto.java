@@ -3,19 +3,19 @@ package com.alura.chainresponsibility.services;
 import java.math.BigDecimal;
 
 import com.alura.chainresponsibility.entities.Orcamento;
+import com.alura.chainresponsibility.services.discounts.Desconto;
+import com.alura.chainresponsibility.services.discounts.DescontoCincoItens;
+import com.alura.chainresponsibility.services.discounts.DescontoValorQuinhentos;
+import com.alura.chainresponsibility.services.discounts.SemDesconto;
 
 public class CalculadoraDesconto {
 	
 	public BigDecimal calcular(Orcamento orcamento) {
-		if (orcamento.getQtdeItens() > 5) {
-			return orcamento.getValor().multiply(new BigDecimal("0.1"));
-		}
 		
-		if (orcamento.getValor().compareTo(new BigDecimal("500")) > 0) {
-			return orcamento.getValor().multiply(new BigDecimal("0.1"));
-		}
+		Desconto desconto = new DescontoCincoItens(new DescontoValorQuinhentos(
+				new SemDesconto()));
 		
-		return BigDecimal.ZERO;
+		return desconto.calcular(orcamento);
 	}
 
 }
