@@ -6,7 +6,7 @@ import com.alura.strategy.entities.Orcamento;
 import com.alura.strategy.entities.taxes.ISS;
 import com.alura.strategy.services.Calculadora;
 
-public class App {
+public class AppStrategy {
 
 	public static void main(String[] args) {
 		
