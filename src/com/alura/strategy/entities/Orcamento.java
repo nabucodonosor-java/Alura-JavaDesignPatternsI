@@ -1,4 +1,4 @@
-package com.alura.entidades;
+package com.alura.strategy.entities;
 
 import java.math.BigDecimal;
 
