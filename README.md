@@ -4,4 +4,4 @@
 - Template Method: este padrão favorece o reaproveitamento de códigos comuns entre classes, evitando assim duplicações de códigos. https://refactoring.guru/design-patterns/template-method.
 - State: esse padrão é utilizado quando temos uma transição de estados ou quando precisamos aplicar alguma regra ou algum algoritmo baseado em um estado de um objeto de uma classe. Ele é parecido com o Strategy https://refactoring.guru/design-patterns/state.
 - Command: é um padrão que tem uma representação de um comando que precisa ser executado. Na realidade o padrão "Command" quando utilizado tem várias classes e cada uma delas vai ter um método em comum que é um método para executar alguma lógica https://refactoring.guru/design-patterns/command.
-- Observer: 
+- Observer: é comumente utilizado por diversas bibliotecas que trabalham com eventos. Muitas tecnologias em Java, como o Spring e o CDI, possuem componentes que nos auxiliam a trabalhar com eventos https://refactoring.guru/design-patterns/observer.
